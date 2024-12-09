@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#pagecontainer {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+
+
+}
+
+header {
+    background-image: url('../images/hand-grips-a-gardening-tool-to-cut-back-a-plant.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+h1 {
+    font-size: 3.5em;
+    font-family: "Century Gothic", Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 a:hover {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+nav {
+
+    text-align: center;
+    font-family: "Century Gothic", Arial, sans-serif;
+    width: 100%;
+    background-color: rgb(65, 132, 42);
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+nav a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+
+nav a:hover {
+    text-shadow: 0px 0px 1px rgb(20, 70, 20);
+}
+
+main {
+  
+    border-left: 2px solid rgb(158, 194, 143);
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 2em;
+    color: rgb(5, 72, 12);
+    font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(65, 132, 42);
+    color: white;
+    padding: 10px 5%;
+    font-size: 0.9em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+footer nav a {
+    display: block;
+    text-align: left;
+    color: white;
+}
+
+.item33 {
+    width: 30%;
+}
+
+.item33 a {
+    color: #eeee;
+    text-decoration: none;
+}
+
+footer #copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+#img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#heroimg {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Multicolumn Layout */
+#multicol {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.item25 {
+    width: 22%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.icon {
+    display: block;
+    font-size: 2.5em;
+    color: rgb(5, 72, 12);
+    margin-bottom: 10px;
+}
+
+.mobile {
+    display: none;
+}
+
+.address {
+    line-height: 1.8;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+  
+    #pagecontainer {
+        display: block; 
+    }
+
+    nav ul {
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        padding: 10px 20px;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin: 10px 0;
+    }
+
+    #categories section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .item33 {
+        width: 30%;
+        text-align: center;
+    }
+
+
+}
+
+
+@media (max-width: 760px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    nav {
+        border-bottom: 1px solid rgb(158, 194, 143);
+    }
+
+   
+    nav ul {
+        display: block;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .item25 {
+        width: 50%;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    #categories section img {
+        width: 120px;
+        height: 120px;
+        margin: 10px 0;
+    }
+
+    .item33 {
+        display: block;
+        padding-left: 40%;
+        margin-bottom: 20px;
+    }
+
+    #categories {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#multicol {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item25 {
+    width: 23%;
+    box-shadow: 0px 0px 20px white; 
+}
